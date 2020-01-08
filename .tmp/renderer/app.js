@@ -24,6 +24,10 @@ var _Room = require("./Room");
 
 var _Room2 = _interopRequireDefault(_Room);
 
+var _firebaseBrowser = require("firebase/firebase-browser");
+
+var _firebaseBrowser2 = _interopRequireDefault(_firebaseBrowser);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var appRouting = _react2.default.createElement(
@@ -41,5 +45,17 @@ var appRouting = _react2.default.createElement(
 if (!location.hash.length) {
     location.hash = "/login";
 }
+
+var config = {
+    apiKey: "AIzaSyDaXq9ANmXUVh1xBDAvl9L_wQKWiBwcHrg",
+    authDomain: "electron-chat-b8191.firebaseapp.com",
+    databaseURL: "https://electron-chat-b8191.firebaseio.com",
+    projectId: "electron-chat-b8191",
+    storageBucket: "electron-chat-b8191.appspot.com",
+    messagingSenderId: "622556304922",
+    appId: "1:622556304922:web:7d2c229d29ea5a46d463a3",
+    measurementId: "G-HW6EPMN8M5"
+};
+_firebaseBrowser2.default.initializeApp(config);
 
 (0, _reactDom.render)(appRouting, document.getElementById("app"));
