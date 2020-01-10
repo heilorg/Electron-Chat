@@ -76,7 +76,7 @@ export default class Rooms extends React.Component{
                 {rooms.map(r => <RoomItem room={r} key={r.key} selected={r.key === roomId} />)}
                 <div className="list-group=header">
                     <form style={FORM_STYLE} onSubmit={this.handleOnSubmit}>
-                        <input type="text" className="form-control" placeholder="New Room" onChange={this.handleOnChangeRoomName} value={this.roomName} />
+                        <input type="text" className="form-control" placeholder="New Room" onChange={this.handleOnChangeRoomName} value={roomName} />
                         <button className="btn btn-default" style={BUTTON_STYLE}>
                             <span className="icon icon-chat" />
                         </button>

@@ -13,7 +13,7 @@ var _reactRouter = require("react-router");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var LIKE_STYLE = {
+var LINK_STYLE = {
     color: "inhert",
     textDecoration: "none"
 };
@@ -24,10 +24,9 @@ function RoomItem(props) {
         description = _props$room.description,
         key = _props$room.key;
 
-
     return _react2.default.createElement(
         "div",
-        { className: selected ? "list-group-item selected" : "list-group-item" },
+        { className: selected ? "list-group-item selected" : "list-group-item", style: LINK_STYLE },
         _react2.default.createElement(
             _reactRouter.Link,
             { to: "/rooms/" + key },

@@ -12,7 +12,7 @@ const appRouting = (
         <Route path="login" component={Login} />
         <Route path="signup" component={Signup} />
         <Route path="rooms" component={Rooms}>
-            <Route path=":roomid" component={Room} />
+            <Route path=":roomId" component={Room} />
         </Route>
     </Router>
 );

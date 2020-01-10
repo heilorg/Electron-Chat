@@ -127,7 +127,7 @@ var Rooms = function (_React$Component) {
                     _react2.default.createElement(
                         "form",
                         { style: FORM_STYLE, onSubmit: this.handleOnSubmit },
-                        _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "New Room", onChange: this.handleOnChangeRoomName, value: this.roomName }),
+                        _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "New Room", onChange: this.handleOnChangeRoomName, value: roomName }),
                         _react2.default.createElement(
                             "button",
                             { className: "btn btn-default", style: BUTTON_STYLE },

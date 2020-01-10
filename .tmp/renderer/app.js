@@ -38,7 +38,7 @@ var appRouting = _react2.default.createElement(
     _react2.default.createElement(
         _reactRouter.Route,
         { path: "rooms", component: _Rooms2.default },
-        _react2.default.createElement(_reactRouter.Route, { path: ":roomid", component: _Room2.default })
+        _react2.default.createElement(_reactRouter.Route, { path: ":roomId", component: _Room2.default })
     )
 );
 
